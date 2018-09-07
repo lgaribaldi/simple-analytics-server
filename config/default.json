@@ -1,0 +1,39 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "secret": "a5d6ccfcc03e48d03be1ae1891284ff301f564df824d1e3b0f5aa08355a4503bcf998d5c29f7a10cd54820a80837b16344537e4c0d62d01d0b500b287d501ba52123bf833d7ad90def2da1a308461eeadc603c108ce535cdb93d400363a76cc4130d99cd6288c79bc7686c24c8581d60630740dab6f2537ddef6f8d75f9733ac916364c72a8f0b36295a27a9c484fde9d9807be245928a2a30691194f2232aa421eee5def084c507c5fd778c101f59a28f605d93644084d02930ef12a74e072fce04728b1ecc9b28b1bca5bea88dc2ef7ae81e7d06e8bb08e78526017bcb69860929e1ffa8c51521a28cd89085c992978d78ce2505c0ec5c2e66daf926dd22d9",
+    "strategies": [
+      "jwt"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "github": {
+      "clientID": "01f32063a0f8fa3cab62",
+      "clientSecret": "913f05b764753e7ef422d409324f4d939007a9ba",
+      "successRedirect": "http://localhost:3030/callback"
+    },
+    "cookie": {
+      "enabled": true,
+      "name": "feathers-jwt",
+      "httpOnly": false,
+      "secure": false
+    }
+  },
+  "nedb": "../data"
+}
