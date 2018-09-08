@@ -3,7 +3,7 @@
   "port": 3030,
   "public": "../public/",
   "paginate": {
-    "default": 10,
+    "default": 50,
     "max": 50
   },
   "authentication": {
@@ -26,7 +26,10 @@
     "github": {
       "clientID": "01f32063a0f8fa3cab62",
       "clientSecret": "913f05b764753e7ef422d409324f4d939007a9ba",
-      "successRedirect": "http://localhost:3030/callback"
+      "successRedirect": "http://localhost:3000/callback",
+      "redirectURI": "http://localhost:3030/auth/github/callback",
+      "callbackURL": "http://localhost:3030/auth/github/callback",
+      "responseType": "token"
     },
     "cookie": {
       "enabled": true,
