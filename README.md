@@ -1,7 +1,6 @@
 # simple-analytics-server
 
 > Backend for the simple analytics project
-This project provides a simple alternative for analytics. 
 
 ## How it works
 
