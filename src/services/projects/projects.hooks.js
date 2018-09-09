@@ -1,5 +1,5 @@
 const { authenticate } = require('@feathersjs/authentication').hooks;
-const { setByDot } = require('feathers-hooks-common');
+const { setByDot, discard } = require('feathers-hooks-common');
 
 const setLastUpdate = () => (hook) => {    
   setByDot(hook, 'data.lastUpdate', Date.now());

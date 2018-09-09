@@ -24,8 +24,8 @@
       "expiresIn": "1d"
     },
     "github": {
-      "clientID": "01f32063a0f8fa3cab62",
-      "clientSecret": "913f05b764753e7ef422d409324f4d939007a9ba",
+      "clientID": "[your client id]",
+      "clientSecret": "[your client secret]",
       "successRedirect": "http://localhost:3000/callback",
       "redirectURI": "http://localhost:3030/auth/github/callback",
       "callbackURL": "http://localhost:3030/auth/github/callback",
